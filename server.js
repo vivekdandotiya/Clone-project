@@ -1,7 +1,8 @@
 import express from "express";
-import path from "path";
 
 const app = express();
+
+/* 👇 THIS IS THE KEY */
 app.use(express.static("public"));
 
 app.get("/products", async (req, res) => {
@@ -10,4 +11,7 @@ app.get("/products", async (req, res) => {
   res.json(data);
 });
 
-app.listen(3000);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log("Server running on", PORT);
+});
