@@ -1,14 +1,31 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Products</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Products</h1>
-    <div id="loader">Loading...</div>
-    <div id="products" class="container"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ShopEasy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <script src="script.js"></script>
-  </body>
+<body>
+
+  <nav class="navbar">
+  <div class="nav-left">
+    <span class="logo-icon">🛒</span>
+    <span class="logo-text">ShopEasy</span>
+  </div>
+
+  <div class="nav-center">
+    <input type="text" placeholder="Search products..." />
+  </div>
+
+  <div class="nav-right">
+    <span id="cart-count">3</span>
+    <a href="cart.html" class="nav-link">Cart</a>
+  </div>
+</nav>
+
+  <div class="products" id="products"></div>
+
+  <script src="js/app.js"></script>
+</body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark">
+
+  <!-- Navbar -->
+  <nav class="navbar dark-nav">
+    <div class="logo">🛒 ShopEasy</div>
+    <a href="index.html" class="nav-link">Home</a>
+  </nav>
+
+  <!-- Cart Container -->
+  <div class="cart-container">
+    <div class="cart-items" id="cart-items"></div>
+
+    <!-- Payment Section -->
+    <div class="payment-card">
+      <h3>Payment Summary</h3>
+      <p>Total Items: <span id="total-items">0</span></p>
+      <p>Total Amount: ₹ <span id="total-price">0</span></p>
+      <button class="pay-btn">Proceed to Pay</button>
+    </div>
+  </div>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
